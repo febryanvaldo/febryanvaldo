@@ -17,7 +17,7 @@ echo "Informasi Domain dan WordPress"
 echo "----------------------"
 read -p "Domain(1) atau Subdomain(2) [1/2] = " tipedomain
 read -p "Nama domain = " domain
-read -p "Versi PHP [7.4/8.0/8.1] = " vphp
+read -p "Versi PHP [7.4/8.0/8.1/8.2/8.3] = " vphp
 read -p "Email notifikasi SSL = " emailssl
 read -p "Judul website = " wptitle
 read -p "Username admin = " wpadmin
