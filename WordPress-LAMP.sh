@@ -5,7 +5,7 @@ echo "Install WordPress dengan LAMP di Ubuntu 22.04 LTS"
 echo "----------------------"
 echo "Spesifikasi:"
 echo "1. Apache"
-echo "2. PHP 7.4, 8.0, 8.1"
+echo "2. PHP 7.4, 8.0, 8.1, 8.2, 8.3"
 echo "3. MariaDB 10.6"
 echo "4. SSL Let's Encrypt"
 echo "5. WordPress terbaru"
@@ -17,7 +17,7 @@ echo "Informasi Domain dan WordPress"
 echo "----------------------"
 read -p "Domain(1) atau Subdomain(2) [1/2] = " tipedomain
 read -p "Nama domain = " domain
-read -p "Versi PHP [7.4/8.0/8.1] = " vphp
+read -p "Versi PHP [7.4/8.0/8.1/8.2/8.3] = " vphp
 read -p "Email notifikasi SSL = " emailssl
 read -p "Judul website = " wptitle
 read -p "Username admin = " wpadmin
@@ -31,7 +31,7 @@ timedatectl set-timezone Asia/Jakarta
 echo
 
 echo "Update & Upgrade"
-apt update
+apt update -y
 apt upgrade -y
 apt install pwgen -y
 echo
